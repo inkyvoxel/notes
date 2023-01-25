@@ -1,0 +1,1 @@
+These are my rough notes. They might one day turn into articles on [inkyvoxel.com](https://www.inkyvoxel.com).
