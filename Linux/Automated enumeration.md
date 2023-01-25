@@ -8,4 +8,4 @@ Tools for automated enumeration:
 
 ## Related
 
-- [[Enumeration]]
+- [[Linux/Enumeration]]

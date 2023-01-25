@@ -2,7 +2,8 @@ Notes about enumeration on [[Linux]].
 
 Enumeration is the process of identifying and gathering information about a system, network, or application.
 
-Common commands for information gathering on the target:
+## Common commands
+
 - `hostname` prints the computer's name.
 - `uname -a` prints information about the kernel.
 - `cat /proc/version` prints additional information about the kernel, and sometimes compiler information.

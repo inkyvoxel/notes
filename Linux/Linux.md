@@ -2,6 +2,6 @@ Notes about Linux.
 
 ## Related
 
-- [[Enumeration]]
+- [[Linux/Enumeration]]
 - [[Automated enumeration]]
 - [[Linux/Privilege escalation]]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Automated enumeration.md",
+                "file": "Windows/Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Automated enumeration.md",
+                "file": "Windows/Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Automated enumeration.md",
+                "file": "Windows/Enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Automated enumeration.md"
+                "file": "Windows/Enumeration.md"
               }
             }
           }
@@ -150,14 +150,14 @@
   "active": "0cd1e8d307b02296",
   "lastOpenFiles": [
     "Linux/Enumeration.md",
+    "Windows/Enumeration.md",
+    "Windows/Privilege escalation.md",
+    "Windows/Windows.md",
+    "Windows/Users and groups.md",
+    "Linux/Automated enumeration.md",
     "Linux/Linux.md",
     "Linux/Privilege escalation.md",
-    "Windows/Privilege escalation.md",
-    "Windows/Users and groups.md",
-    "Windows/Windows.md",
-    "Linux/Automated enumeration.md",
     "Untitled.canvas",
-    "README.md",
-    "Windows.md"
+    "README.md"
   ]
 }
