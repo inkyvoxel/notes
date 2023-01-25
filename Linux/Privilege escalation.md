@@ -1,0 +1,1 @@
+Notes about privilege escalation on [[Linux]].
