@@ -8,4 +8,6 @@ Tools for automated enumeration:
 
 ## Related
 
+- [[Linux]]
 - [[Linux/Enumeration]]
+- [[Linux/Privilege escalation]]

@@ -17,7 +17,10 @@ Enumeration is the process of identifying and gathering information about a syst
 - `ifconfig` prints information about the network adapters.
 - `cat /etc/exports` prints information about Network File Sharing (NFS)
 - `echo $PATH` prints a list of directories used to search for binaries when commands are typed in the terminal.
+- `whoami` prints the current user.
 
 ## Related
 
+- [[Linux]]
 - [[Automated enumeration]]
+- [[Linux/Privilege escalation]]

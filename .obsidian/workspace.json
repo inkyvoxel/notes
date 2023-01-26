@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "949cdf3afb2f2ae8",
+        "id": "083725d7ac6383c9",
         "type": "tabs",
         "children": [
           {
-            "id": "0cd1e8d307b02296",
+            "id": "70d273edc6fc2e33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Enumeration.md",
+                "file": "Linux/Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Enumeration.md",
+                "file": "Linux/Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Enumeration.md",
+                "file": "Linux/Enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Enumeration.md"
+                "file": "Linux/Enumeration.md"
               }
             }
+          },
+          {
+            "id": "b10830a8113942f3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,17 +156,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0cd1e8d307b02296",
+  "active": "70d273edc6fc2e33",
   "lastOpenFiles": [
-    "Linux/Enumeration.md",
+    "Linux/Linux.md",
     "Windows/Enumeration.md",
     "Windows/Privilege escalation.md",
     "Windows/Windows.md",
-    "Windows/Users and groups.md",
     "Linux/Automated enumeration.md",
-    "Linux/Linux.md",
+    "Linux/Enumeration.md",
     "Linux/Privilege escalation.md",
-    "Untitled.canvas",
-    "README.md"
+    "Windows/Users and groups.md",
+    "README.md",
+    "Untitled.canvas"
   ]
 }
