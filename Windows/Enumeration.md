@@ -94,6 +94,16 @@ reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer
 
 [[Windows/Privilege escalation#AlwaysInstallElevated]]
 
+## Windows Services
+
+Run `sc qc <servicename>` to print more information about a service.
+
+Check `BINARY_PATH_NAME` for executable. Run `icacls <filepath>` to check permissions. Is there modify `(M)` permissions?
+
+Check `SERVICE_START_NAME` for user.
+
+Check `HKLM\SYSTEM\CurrentControlSet\Services\` registries for service configurations.
+
 ## Related
 
 - [[Windows]]
