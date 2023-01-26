@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "083725d7ac6383c9",
+        "id": "096248dfd7f1361e",
         "type": "tabs",
         "children": [
           {
-            "id": "70d273edc6fc2e33",
+            "id": "e32d58fa8b1ead2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Enumeration.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Enumeration.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Enumeration.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Enumeration.md"
+                "file": "README.md"
               }
             }
           },
@@ -156,16 +156,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "70d273edc6fc2e33",
+  "active": "e32d58fa8b1ead2c",
   "lastOpenFiles": [
-    "Linux/Linux.md",
-    "Windows/Enumeration.md",
     "Windows/Privilege escalation.md",
+    "Linux/Linux.md",
     "Windows/Windows.md",
-    "Linux/Automated enumeration.md",
-    "Linux/Enumeration.md",
-    "Linux/Privilege escalation.md",
     "Windows/Users and groups.md",
+    "Windows/Enumeration.md",
+    "Linux/Enumeration.md",
+    "Linux/Automated enumeration.md",
+    "Linux/Privilege escalation.md",
     "README.md",
     "Untitled.canvas"
   ]
