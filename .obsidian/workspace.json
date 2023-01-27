@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Enumeration.md",
+                "file": "Windows/Privilege escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Enumeration.md",
+                "file": "Windows/Privilege escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Enumeration.md",
+                "file": "Windows/Privilege escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Enumeration.md"
+                "file": "Windows/Privilege escalation.md"
               }
             }
           },
@@ -158,12 +158,12 @@
   },
   "active": "e32d58fa8b1ead2c",
   "lastOpenFiles": [
-    "README.md",
+    "Windows/Enumeration.md",
     "Windows/Privilege escalation.md",
+    "README.md",
     "Linux/Linux.md",
     "Windows/Windows.md",
     "Windows/Users and groups.md",
-    "Windows/Enumeration.md",
     "Linux/Enumeration.md",
     "Linux/Automated enumeration.md",
     "Linux/Privilege escalation.md",
