@@ -100,9 +100,13 @@ Run `sc qc <servicename>` to print more information about a service.
 
 Check `BINARY_PATH_NAME` for executable. Run `icacls <filepath>` to check permissions. Is there modify `(M)` permissions?
 
+Check if the `BINARY_PATH_NAME` is missing quotes, i.e. `C:\path\to\file.exe` instead of `"C:\path\to\file.exe"`.
+
 Check `SERVICE_START_NAME` for user.
 
 Check `HKLM\SYSTEM\CurrentControlSet\Services\` registries for service configurations.
+
+Download [AccessChk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) to check service permissions. Run `accesschk64.exe -qlc <servicename>`. Check for `SERVICE_ALL_ACCESS` permission, which means you can rewrite service configurations.
 
 ## Related
 

@@ -57,6 +57,37 @@ sc.exe start <service-name>
 
 Note: Use `sc.exe` in PowerShell or `sc` in Command Prompt.
 
+## Unquoted service paths
+
+[[Windows/Enumeration#Windows Services]]
+
+Run `sc.exe qc <servicename`.
+
+Check if the `BINARY_PATH_NAME` is missing quotes and spaces in path/filename, i.e. `C:\path\to\file name.exe` instead of `"C:\path\to\file name.exe"`. 
+
+If the path has spaces and it is unquoted, you can exploit this. In this example, the service till try to find `file.exe` before it tries to find `file name.exe`, therefore you can put a malicious `file.exe` in the same folder.
+
+## Insecure service permissions
+
+Download [AccessChk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) to check service permissions. Run `accesschk64.exe -qlc <servicename>`. Check for `SERVICE_ALL_ACCESS` permission, which means you can rewrite service configurations.
+
+Get a malicious executable on the server.
+
+Reconfigure the service to run the executable file:
+
+```powershell
+sc.exe config <servicename> binPath= "C:\path\to\malicious\file.exe" obj= LocalSystem
+```
+
+Wait for service to run on target computer, or try to force restart if you have privileges:
+
+```powershell
+sc.exe stop <servicename>
+sc.exe start <service-name>
+```
+
+Note: Use `sc.exe` in PowerShell or `sc` in Command Prompt.
+
 ## AlwaysInstallElevated
 
 [[Windows/Enumeration#AlwaysInstallElevated]]
