@@ -9,6 +9,7 @@ Enumeration is the process of identifying and gathering information about a syst
 - `icacls <filename>` prints detailed information about a file's permissions.
 - `where /R C:\ <filename>` prints location of filename.
 - `whoami` prints the current user.
+- `whoami /priv` prints the current user's privileges.
 
 ## Unattended Windows Installations
 
@@ -107,6 +108,26 @@ Check `SERVICE_START_NAME` for user.
 Check `HKLM\SYSTEM\CurrentControlSet\Services\` registries for service configurations.
 
 Download [AccessChk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) to check service permissions. Run `accesschk64.exe -qlc <servicename>`. Check for `SERVICE_ALL_ACCESS` permission, which means you can rewrite service configurations.
+
+- [[Windows/Privilege escalation#Services]]
+- [[Windows/Privilege escalation#Unquoted service paths]]
+- [[Windows/Privilege escalation#Insecure service permissions]]
+
+## SeBackupPrivilege / SeRestorePrivilege
+
+`SeBackupPrivilege` and `SeRestorePrivilege` are special permissions given to users to allow them to backup any files on disk.
+
+Run `whoami /priv` and check for `SeBackupPrivilege` and `SeRestorePrivilege`.
+
+[[Windows/Privilege escalation#SeBackupPrivilege / SeRestorePrivilege]]
+
+## SeTakeOwnershipPrivilege
+
+`SeTakeOwnershipPrivilege` is a special permissions given to users to allow them to take ownership of objects (files, services, registry keys, etc.) on the system.
+
+Run `whoami /priv` and check for `SeTakeOwnershipPrivilege`.
+
+[[Windows/Privilege escalation#SeTakeOwnership]]
 
 ## Related
 

