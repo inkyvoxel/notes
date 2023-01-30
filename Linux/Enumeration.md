@@ -22,5 +22,5 @@ Enumeration is the process of identifying and gathering information about a syst
 ## Related
 
 - [[Linux]]
-- [[Automated enumeration]]
+- [[Linux/Automated enumeration]]
 - [[Linux/Privilege escalation]]

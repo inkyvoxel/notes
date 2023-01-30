@@ -3,5 +3,5 @@ Notes about Linux.
 ## Related
 
 - [[Linux/Enumeration]]
-- [[Automated enumeration]]
+- [[Linux/Automated enumeration]]
 - [[Linux/Privilege escalation]]

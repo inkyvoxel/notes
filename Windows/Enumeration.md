@@ -129,6 +129,10 @@ Run `whoami /priv` and check for `SeTakeOwnershipPrivilege`.
 
 [[Windows/Privilege escalation#SeTakeOwnership]]
 
+## SeImpersonatePrivilege/ SeAssignPrimaryTokenPrivilege
+
+[[Windows/Privilege escalation#SeImpersonatePrivilege/ SeAssignPrimaryTokenPrivilege]]
+
 ## Related
 
 - [[Windows]]

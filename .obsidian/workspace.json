@@ -158,15 +158,15 @@
   },
   "active": "e32d58fa8b1ead2c",
   "lastOpenFiles": [
-    "Windows/Enumeration.md",
+    "Linux/Automated enumeration.md",
+    "Linux/Enumeration.md",
     "Windows/Privilege escalation.md",
+    "Windows/Automated enumeration.md",
+    "Windows/Enumeration.md",
     "README.md",
     "Linux/Linux.md",
     "Windows/Windows.md",
     "Windows/Users and groups.md",
-    "Linux/Enumeration.md",
-    "Linux/Automated enumeration.md",
-    "Linux/Privilege escalation.md",
-    "Untitled.canvas"
+    "Linux/Privilege escalation.md"
   ]
 }
